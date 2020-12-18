@@ -41,8 +41,8 @@ video.addEventListener('playing', () => {
     const age = resizeDetection[0]?.age;
     const interpolatedAge = interpolatedAgePredict(age)
     const bottomRight = {
-      x: resizeDetection[0].detection.box.bottomRight.x - 50,
-      y: resizeDetection[0].detection.box.bottomRight.y
+      x: resizeDetection[0]?.detection.box.bottomRight.x - 50,
+      y: resizeDetection[0]?.detection.box.bottomRight.y
     }
 
     new faceapi.draw.DrawTextField(
