@@ -56,5 +56,5 @@ function interpolatedAgePredict(age) {
  predictedAge = [age].concat(predictedAge).slice(0, 30);
  const avgPredictedAge = 
   predictedAge.reduce((total, a) => total + a) / predictedAge.length
-  return avgPredictedAge 
+  return avgPredictedAge
 }
